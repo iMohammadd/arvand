@@ -1,0 +1,15 @@
+.naskh {
+    font-family: 'Droid Arabic Naskh', serif;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.context {
+    padding: 0 40px 0 0;
+}
+
+th {
+    text-align: right;
+}
