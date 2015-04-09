@@ -53,4 +53,13 @@ class adminController extends BaseController {
         $car->save();
         return Redirect::route('admin');
     }
+    
+    public function factory() {
+        $factory = Factory::where('name','!=','')->paginate(10);
+        return View::make('admin.factoryMain')->with(['factory'=>$factory]);
+    }
+    
+    public function getAddFactory() {
+        return View::make('admin.addfactory');
+    }
 }

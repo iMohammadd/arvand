@@ -1,7 +1,7 @@
 <div class="row">
     <ul class="list-group">
         <li class="list-group-item"><a href="{{URL::route('admin')}}"><i class="fa fa-car"></i> خودروها</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-asterisk"></i> کارخانه ها</a></li>
+        <li class="list-group-item"><a href="{{URL::route('factory')}}"><i class="fa fa-asterisk"></i> کارخانه ها</a></li>
     </ul>
 </div>
 <div class="row">

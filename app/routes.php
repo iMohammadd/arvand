@@ -29,6 +29,8 @@ Route::group(['before'=>'auth'], function()
         });
 
         Route::group(['prefix'=>'factory'], function(){
+            Route::get('/',['as'=>'factory', 'uses'=>'adminController@factory']);
+            Route::get('add',['as'=>'addFactory','uses'=>'adminController@getAddFactory']);
 
         });
     }
